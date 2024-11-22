@@ -1,0 +1,660 @@
+/*!*****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./components/photo-frame.module.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************/
+.photo-frame_overlay__uC1m7 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .photo-frame_container__5m8q7 {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
+  }
+  
+  .photo-frame_frame__ypBJ9 {
+    position: relative;
+    width: 320px;
+    height: 420px;
+    padding: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    background: linear-gradient(45deg, #FFD700, #FF69B4, #8A2BE2);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .photo-frame_frame__ypBJ9::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: white;
+    border-radius: 5px;
+  }
+  
+  .photo-frame_frame__ypBJ9:hover {
+    transform: scale(1.05);
+  }
+  
+  .photo-frame_photoPlaceholder__EV0nN {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    overflow: hidden;
+  }
+  
+  .photo-frame_placeholderText__boLvX {
+    font-size: 18px;
+    color: #FF1493;
+    text-align: center;
+    padding: 20px;
+    max-width: 80%;
+    animation: photo-frame_fadeInOut__QCddo 5s infinite;
+    text-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
+  }
+  
+  @keyframes photo-frame_fadeInOut__QCddo {
+    0%, 100% { opacity: 0.5; transform: scale(0.95); }
+    50% { opacity: 1; transform: scale(1); }
+  }
+  
+  .photo-frame_sparkles__bKY1b, .photo-frame_hearts__la48B {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    pointer-events: none;
+    z-index: 2;
+  }
+  
+  .photo-frame_sparkles__bKY1b::before, .photo-frame_sparkles__bKY1b::after,
+  .photo-frame_hearts__la48B::before, .photo-frame_hearts__la48B::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #FFD700;
+    animation: photo-frame_twinkle__lwMa7 1.5s infinite alternate;
+  }
+  
+  .photo-frame_hearts__la48B::before, .photo-frame_hearts__la48B::after {
+    background-color: #FF69B4;
+    clip-path: path('M10,30 A20,20,0,0,1,50,30 A20,20,0,0,1,90,30 Q90,60,50,90 Q10,60,10,30 Z');
+  }
+  
+  .photo-frame_sparkles__bKY1b::before { top: 20%; left: 10%; animation-delay: 0.2s; }
+  .photo-frame_sparkles__bKY1b::after { top: 80%; right: 10%; animation-delay: 0.5s; }
+  .photo-frame_hearts__la48B::before { bottom: 20%; left: 5%; animation-delay: 0.7s; }
+  .photo-frame_hearts__la48B::after { top: 10%; right: 15%; animation-delay: 1s; }
+  
+  @keyframes photo-frame_twinkle__lwMa7 {
+    0% { opacity: 0.3; transform: scale(0.8); }
+    100% { opacity: 1; transform: scale(1.2); }
+  }
+  
+  .photo-frame_message__JJwED {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    cursor: pointer;
+  }
+  
+  .photo-frame_message__JJwED p {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #FF1493;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
+  }
+  
+  
+/*!*****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./components/memory-game.module.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************/
+.memory-game_gameContainer__zVBVo {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .memory-game_gameTitle__LDtBn {
+    font-size: 24px;
+    color: #FF1493;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .memory-game_gameInfo__iX9tq {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #8A2BE2;
+  }
+  
+  .memory-game_cardGrid__gy8AH {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  .memory-game_card__JLRMn {
+    aspect-ratio: 1;
+    perspective: 1000px;
+    cursor: pointer;
+  }
+  
+  .memory-game_cardInner__sU2lE {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  .memory-game_card__JLRMn.memory-game_flipped__Mincb .memory-game_cardInner__sU2lE {
+    transform: rotateY(180deg);
+  }
+  
+  .memory-game_cardFront__y9nri, .memory-game_cardBack__9V5UD {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .memory-game_cardFront__y9nri {
+    background-color: #FFD700;
+    color: #FF1493;
+  }
+  
+  .memory-game_cardBack__9V5UD {
+    background-color: #FF69B4;
+    transform: rotateY(180deg);
+  }
+  
+  .memory-game_card__JLRMn.memory-game_matched__HuRYR .memory-game_cardBack__9V5UD {
+    background-color: #90EE90;
+  }
+  
+  .memory-game_resetButton__910Y1 {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #8A2BE2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .memory-game_resetButton__910Y1:hover {
+    background-color: #9932CC;
+  }
+  
+  
+/*!************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./components/word-scramble-game.module.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************/
+.word-scramble-game_gameContainer__iBvbB {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .word-scramble-game_gameTitle__Le_5_ {
+    font-size: 24px;
+    color: #FF1493;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .word-scramble-game_scrambledWord__EyZXi {
+    font-size: 28px;
+    color: #8A2BE2;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 3px;
+  }
+  
+  .word-scramble-game_input__PGcIO {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    border: 2px solid #FFD700;
+    border-radius: 5px;
+  }
+  
+  .word-scramble-game_button__efkzY {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #8A2BE2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+  }
+  
+  .word-scramble-game_button__efkzY:hover {
+    background-color: #9932CC;
+  }
+  
+  .word-scramble-game_message__Up_7A {
+    font-size: 18px;
+    color: #FF1493;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .word-scramble-game_score__KMbIc {
+    font-size: 20px;
+    color: #FFD700;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  
+/*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./components/balloon-shooting-game.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************/
+.balloon-shooting-game_gameContainer__hldum {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .balloon-shooting-game_gameTitle__kk4bO {
+    font-size: 24px;
+    color: #FF1493;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .balloon-shooting-game_gameInfo__jyHDb {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    color: #8A2BE2;
+    margin-bottom: 20px;
+  }
+  
+  .balloon-shooting-game_gameArea__zBRGa {
+    width: 100%;
+    height: 400px;
+    background-color: #E6E6FA;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .balloon-shooting-game_balloon__R9HsX {
+    width: 40px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+  }
+  
+  .balloon-shooting-game_balloon__R9HsX::before {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 12px;
+    background-color: #FFA07A;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .balloon-shooting-game_gameOver__woljJ {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .balloon-shooting-game_gameOver__woljJ h3 {
+    font-size: 24px;
+    color: #FF1493;
+    margin-bottom: 10px;
+  }
+  
+  .balloon-shooting-game_resetButton__trOjd {
+    background-color: #8A2BE2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .balloon-shooting-game_resetButton__trOjd:hover {
+    background-color: #9932CC;
+  }
+  
+  
+/*!****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./components/birthday-wish-fountain.module.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************/
+.birthday-wish-fountain_gameContainer__6wmc7 {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .birthday-wish-fountain_gameTitle__ulGEA {
+    font-size: 24px;
+    color: #FF1493;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .birthday-wish-fountain_gameArea__n7NOL {
+    width: 100%;
+    height: 200px;
+    background-color: #E6E6FA;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .birthday-wish-fountain_fountain__REKk6 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 48px;
+  }
+  
+  .birthday-wish-fountain_coin__m2R1_ {
+    position: absolute;
+    font-size: 24px;
+  }
+  
+  .birthday-wish-fountain_wishInput__4ryhc {
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  
+  .birthday-wish-fountain_input__abqs7 {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #8A2BE2;
+    border-radius: 5px;
+  }
+  
+  .birthday-wish-fountain_button__b367_ {
+    background-color: #8A2BE2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .birthday-wish-fountain_button__b367_:hover:not(:disabled) {
+    background-color: #9932CC;
+  }
+  
+  .birthday-wish-fountain_button__b367_:disabled {
+    background-color: #D8BFD8;
+    cursor: not-allowed;
+  }
+  
+  .birthday-wish-fountain_wishes__NnjJs {
+    margin-top: 20px;
+  }
+  
+  .birthday-wish-fountain_wishes__NnjJs h3 {
+    font-size: 18px;
+    color: #8A2BE2;
+    margin-bottom: 10px;
+  }
+  
+  .birthday-wish-fountain_wishes__NnjJs ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .birthday-wish-fountain_wishItem__h2I4i {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .birthday-wish-fountain_toggleButton__mFjSH {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .birthday-wish-fountain_visibleWish__ljE53 {
+    color: #333;
+  }
+  
+  .birthday-wish-fountain_hiddenWish__ZX7_K {
+    color: #999;
+  }
+  
+  .birthday-wish-fountain_gameOver__fvrN1 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .birthday-wish-fountain_gameOver__fvrN1 h3 {
+    font-size: 24px;
+    color: #FF1493;
+    margin-bottom: 10px;
+  }
+  
+  .birthday-wish-fountain_resetButton__nCS_2 {
+    background-color: #8A2BE2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .birthday-wish-fountain_resetButton__nCS_2:hover {
+    background-color: #9932CC;
+  }
+  
+  
+/*!******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./components/music-player.module.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************/
+.music-player_musicPlayer__0qLNQ {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.music-player_playButton__1QQN_ {
+  background-color: rgba(138, 43, 226, 0.7);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.music-player_playButton__1QQN_:hover {
+  background-color: rgba(153, 50, 204, 0.8);
+  transform: scale(1.05);
+}
+
+
+/*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./components/response-form.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************/
+.response-form_responseForm__2BJDA {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 500px;
+    margin: 20px auto;
+  }
+  
+  .response-form_title__xYnN_ {
+    font-size: 24px;
+    color: #FF1493;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .response-form_textarea__MCU37 {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: 2px solid #8A2BE2;
+    border-radius: 5px;
+    resize: vertical;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .response-form_submitButton___tzwM {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #8A2BE2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .response-form_submitButton___tzwM:hover:not(:disabled) {
+    background-color: #9932CC;
+  }
+  
+  .response-form_submitButton___tzwM:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+  
+  .response-form_sentMessage__SI_JB {
+    text-align: center;
+    font-size: 18px;
+    color: #4CAF50;
+  }
+  
+  
+/*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./components/game-selector.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************/
+.game-selector_gameSelectorContainer__9Zgwx {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .game-selector_selectorTitle__nhqjK {
+    font-size: 24px;
+    color: #FF1493;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .game-selector_gameList__D5ff0 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .game-selector_gameButton__DjvHJ {
+    background-color: #FFD700;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: left;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .game-selector_gameButton__DjvHJ:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .game-selector_gameButton__DjvHJ h3 {
+    font-size: 18px;
+    color: #8A2BE2;
+    margin-bottom: 10px;
+  }
+  
+  .game-selector_gameButton__DjvHJ p {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  

@@ -1,0 +1,68 @@
+.gameContainer {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .gameTitle {
+    font-size: 24px;
+    color: #FF1493;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .scrambledWord {
+    font-size: 28px;
+    color: #8A2BE2;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 3px;
+  }
+  
+  .input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    border: 2px solid #FFD700;
+    border-radius: 5px;
+  }
+  
+  .button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #8A2BE2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+  }
+  
+  .button:hover {
+    background-color: #9932CC;
+  }
+  
+  .message {
+    font-size: 18px;
+    color: #FF1493;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .score {
+    font-size: 20px;
+    color: #FFD700;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  

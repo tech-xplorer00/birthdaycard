@@ -1,0 +1,78 @@
+.gameContainer {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .gameTitle {
+    font-size: 24px;
+    color: #FF1493;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .gameInfo {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    color: #8A2BE2;
+    margin-bottom: 20px;
+  }
+  
+  .gameArea {
+    width: 100%;
+    height: 400px;
+    background-color: #E6E6FA;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .balloon {
+    width: 40px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+  }
+  
+  .balloon::before {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 12px;
+    background-color: #FFA07A;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .gameOver {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .gameOver h3 {
+    font-size: 24px;
+    color: #FF1493;
+    margin-bottom: 10px;
+  }
+  
+  .resetButton {
+    background-color: #8A2BE2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .resetButton:hover {
+    background-color: #9932CC;
+  }
+  
+  
